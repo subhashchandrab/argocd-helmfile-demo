@@ -9,4 +9,4 @@ releases:
     version: 4.10.0
     values:
       - controller:
-          replicaCount: 2
+          replicaCount: 1
