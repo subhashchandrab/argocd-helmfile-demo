@@ -13,4 +13,4 @@ releases:
     chart: ingress-nginx/ingress-nginx
     version: 4.10.0
     values:
-    - ../environments/env.yaml
+    - {{ .Values | toYaml | nindent 8 }}
