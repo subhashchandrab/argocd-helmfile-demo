@@ -13,4 +13,4 @@ releases:
     chart: ingress-nginx/ingress-nginx
     version: 4.10.0
     values:
-      - {{ .Values | toYaml | nindent 8 }}
+      - {{ .Values | index "ingress-nginx" | toYaml | nindent 8 }}
